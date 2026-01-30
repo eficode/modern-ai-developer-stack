@@ -28,6 +28,8 @@ This repository tracks the rapidly evolving landscape of AI development tools. I
   - `docs/standards/python.md` – Python service layout, tooling (pytest, ruff, mypy), and error handling.
 - Ready-made stacks (collections):
   - `collections/typescript-web-service.md` – Opinionated stack for a TypeScript/Node web service with strict typing, Vitest, ESLint, and CI outline.
+- Workflow guides:
+  - `docs/guides/choosing-mcp-servers.md` – How to choose MCP servers based on your tech stack (Java/GitLab, Python/GitHub, .NET/Azure DevOps, etc.).
 
 As you add more standards or collections, list them here so both humans and AI agents can discover them easily.
 
@@ -75,7 +77,7 @@ As you add more standards or collections, list them here so both humans and AI a
 * **[LlamaIndex](https://www.llamaindex.ai/)** - A data framework for connecting LLMs to your data, with indexing, retrieval, and RAG tooling.
 
 ### Connectivity & Skills
-* **[MCP (Model Context Protocol)](https://modelcontextprotocol.io/)** - The new open standard for connecting AI assistants to systems (databases, Slack, GitHub) without building custom integrations for every model.
+* **[MCP (Model Context Protocol)](https://modelcontextprotocol.io/)** - The new open standard for connecting AI assistants to systems (databases, Slack, GitHub) without building custom integrations for every model. See `docs/guides/choosing-mcp-servers.md` for workflow-specific recommendations.
 * **[apm (Agent Package Manager)](https://github.com/danielmeppiel/apm)** - A package manager for distributing and installing AI agent "skills" and tools.
 * **[Agent Skills](https://agentskills.io/home)** - An open format for packaging reusable agent skills as folders of instructions, scripts, and resources.
 
