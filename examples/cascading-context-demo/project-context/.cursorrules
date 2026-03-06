@@ -1,0 +1,19 @@
+# Cursor Rules
+
+Read context from (in order of increasing specificity):
+1. Repository: `../../repository-context/AGENTS.md`
+2. Standards: `../../repository-context/docs/standards/typescript.md`
+3. Collection: `../../repository-context/collections/typescript-web-service.md`
+4. This project: `README.md`
+
+## Cursor-Specific Settings
+
+- Index all files except: `node_modules`, `dist`, `.cache`, `coverage`
+- Use workspace-wide search for cross-file refactoring
+- Enable TypeScript IntelliSense for all files
+
+## Note
+
+This file contains only Cursor-specific settings. For all coding conventions, read the context files listed above.
+
+The same conventions apply whether you use Cursor, GitHub Copilot, Aider, or other AI assistants.
