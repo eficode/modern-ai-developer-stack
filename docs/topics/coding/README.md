@@ -45,8 +45,8 @@ As you adopt new tools, list them here with when/why to use each.
   - Great for spec-first workflows, code reviews, and multi-file edits controlled from the shell.
 - **Aider** – Git-aware terminal pair programmer.
   - Excellent for refactors and incremental changes with strong git integration.
-- **OpenAI Codex** – Lightweight coding agent that runs locally.
-  - Integrates with ChatGPT plans and IDEs; good for teams already standardized on OpenAI tooling.
+- **OpenAI ChatGPT / IDE & CLI agents** – Cloud-based coding agents powered by current OpenAI models.
+  - Integrate with ChatGPT, the OpenAI API, and supported IDE/CLI extensions; good for teams standardized on OpenAI tooling.
 - **Goose** – Local-first AI engineering agent.
   - Automates larger engineering tasks using MCP servers, extensions, and recipes.
 
