@@ -114,7 +114,7 @@ project/
 
 ```typescript
 // src/routes/users.routes.ts
-import { FastifyInstance } from 'fastify'
+import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
 import { getUserById } from '../services/user.service'
 
@@ -254,8 +254,19 @@ import jwt from 'jsonwebtoken'
 
 export async function authenticateJWT(request, reply) {
   const token = request.headers.authorization?.replace('Bearer ', '')
-  const decoded = jwt.verify(token, process.env.JWT_SECRET)
-  request.user = decoded
+  
+  if (!token) {
+    reply.status(401).send({ error: 'Unauthorized' })
+    return
+  }
+  
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    request.user = decoded
+  } catch (err) {
+    reply.status(401).send({ error: 'Unauthorized' })
+    return
+  }
 }
 
 // Usage in routes:
@@ -364,7 +375,7 @@ npm install --save-dev typescript vitest @types/node tsx
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

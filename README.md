@@ -30,9 +30,9 @@ This repository tracks the rapidly evolving landscape of AI development tools. I
   - `collections/typescript-web-service.md` – Opinionated stack for a TypeScript/Node web service with strict typing, Vitest, ESLint, and CI outline.
 - Methodology guides:
   - `docs/guides/cascading-context.md` – **Tool-agnostic approach to organizing AI context** across multiple layers (repository → standards → collections → project → module → file). Enables easy tool migration and consistent AI behavior.
-  - `docs/workflows/context-aware-development.md` – Practical workflows for setting up and using cascading context in real development scenarios.
 - Workflow guides:
   - `docs/guides/choosing-mcp-servers.md` – How to choose MCP servers based on your tech stack (Java/GitLab, Python/GitHub, .NET/Azure DevOps, etc.).
+  - `docs/workflows/context-aware-development.md` – Practical workflows for setting up and using cascading context in real development scenarios.
 - Examples:
   - `examples/cascading-context-demo/` – Complete reference implementation showing all context layers with real examples.
 

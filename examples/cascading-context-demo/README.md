@@ -241,7 +241,7 @@ By using tool-agnostic cascading context, you maintain **one source of truth** t
 ## Next Steps
 
 1. Explore each context layer in the subdirectories
-2. Read the `decision-log` section to see how an agent would synthesize requirements
+2. Read the **Decision Log Example** section to see how an agent would synthesize requirements
 3. Apply this structure to your own projects
 4. Use the `skills/setup-cascading-context/` agent skill to audit your existing context
 

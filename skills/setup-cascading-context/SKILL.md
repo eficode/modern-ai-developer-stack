@@ -99,9 +99,16 @@ Check for common issues:
    - Compare naming conventions, code style, and tooling across different context files
    - Report conflicting guidelines (e.g., `AGENTS.md` says "use Vitest", but project README says "use Jest")
 
-### Step 4: Generate Missing Context Files (Generate Mode)
+### Step 4: Ask for Confirmation (Generate Mode Only)
 
-If mode is `generate`:
+Before creating files, ask the user:
+- "I will create the following files: [list]. Proceed? (y/n)"
+- If user says no, abort
+- If user says yes, proceed with file generation
+
+### Step 5: Generate Missing Context Files (Generate Mode)
+
+If mode is `generate` and user confirmed:
 
 1. **Repository Level** (`AGENTS.md`):
    - If missing, create a template based on `examples/cascading-context-demo/repository-context/AGENTS.md`
@@ -127,7 +134,7 @@ If mode is `generate`:
    - For large subsystems (>1000 lines or >10 files), offer to create module-level READMEs
    - Use template from `examples/cascading-context-demo/module-context/src/payments/README.md`
 
-### Step 5: Report Results
+### Step 6: Report Results
 
 For **audit mode**, output a markdown report:
 

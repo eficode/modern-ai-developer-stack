@@ -216,7 +216,7 @@ From the context traversal, the agent determines:
 **File**: `src/routes/users.routes.ts`
 
 ```typescript
-import { FastifyInstance } from 'fastify'
+import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
 import { authenticateJWT } from '../middleware/auth'
 import { getUserOrders } from '../services/orders.service'

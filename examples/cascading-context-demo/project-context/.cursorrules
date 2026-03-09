@@ -1,9 +1,9 @@
 # Cursor Rules
 
 Read context from (in order of increasing specificity):
-1. Repository: `../../repository-context/AGENTS.md`
-2. Standards: `../../repository-context/docs/standards/typescript.md`
-3. Collection: `../../repository-context/collections/typescript-web-service.md`
+1. Repository: `../repository-context/AGENTS.md`
+2. Standards: `../repository-context/docs/standards/typescript.md`
+3. Collection: `../repository-context/collections/typescript-web-service.md`
 4. This project: `README.md`
 
 ## Cursor-Specific Settings
